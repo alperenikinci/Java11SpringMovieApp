@@ -35,9 +35,9 @@ public class User {
     @Builder.Default
     private EUserType userType = EUserType.USER;
     @ElementCollection
-    private List<Long> favMovie;
+    private List<Long> favMovies;
     @ElementCollection
-    private List<Long> favGenre;
+    private List<Long> favGenres;
     @ElementCollection
     private List<Long> comments;
 

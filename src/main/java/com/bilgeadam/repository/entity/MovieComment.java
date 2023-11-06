@@ -21,4 +21,6 @@ public class MovieComment {
     @Column(length = 500)
     private String content;
     private LocalDate date;
+    private Long userId;
+    private Long movieId;
 }

@@ -25,15 +25,14 @@ public class Movie {
     private String image;
     private String name;
     private String country;
-    private String rating;
+    private double rating;
     @Column(length = 2048)
     private String summary;
-    private LocalDate premiere;
+    private LocalDate premiered;
     private String url;
     @ElementCollection
     private List<Long> genres;
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     private List<Long> comments;
-
 
 }
